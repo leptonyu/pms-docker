@@ -15,6 +15,7 @@ ENTRYPOINT ["/init"]
 RUN \
 # Update and get dependencies
     apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y \
       tzdata \
       curl \
